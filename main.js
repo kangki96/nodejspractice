@@ -1,27 +1,27 @@
 // console.log("Server open")
 
-// var http = require('http');
-// var fs = require('fs');
-// var url = require('url');
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
 
-// const { dirname } = require('path');
-// const { type } = require('os');
-// var app = http.createServer(function(request,response){
-//     var _url = request.url;
-//     console.log(_url);
-//     if(_url == '/'){
-//       _url = '/index.html';
-//     }
-//     if(_url == '/favicon.ico'){
-//       response.writeHead(404);
-//       response.end();
-//       return;
-//     }
-//     response.writeHead(200);
-//     response.end(fs.readFileSync(__dirname + _url));
+const { dirname } = require('path');
+const { type } = require('os');
+var app = http.createServer(function(request,response){
+    var _url = request.url;
+    console.log(_url);
+    if(_url == '/'){
+      _url = '/index.html';
+    }
+    if(_url == '/favicon.ico'){
+      response.writeHead(404);
+      response.end();
+      return;
+    }
+    response.writeHead(200);
+    response.end(fs.readFileSync(__dirname + _url));
  
-// });
-// app.listen(3000);
+});
+app.listen(3000);
 
 
 
@@ -131,11 +131,46 @@
 // console.log('a')
 // console.log('b')
 
-// while(true){
-//   console.log('c')
-//   console.log('d')
+// var i = 0;
+// while(i<2){
+//   console.log('c');
+//   console.log('d');
+//   i= i+1;
 // }
 // console.log('e')
+
+
+
+// 배열과 반복문 Array data type, Loop statement
+// var arr = ['A','B','C','D'];    //배열
+// console.log(arr[0]);            //배열의 자릿값
+// console.log(arr[1]);
+// // arr[2]=3;
+// arr.push('E');
+// console.log(arr.length)
+// console.log(arr);
+
+
+
+// // 배열과 반복문2 Array data type, Loop statement
+// var number = [1,2,3,4,5,6];
+// var i = 0;
+// while(i<number.length){
+//     console.log(number[i]);
+//     i= i+1;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

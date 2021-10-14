@@ -35,6 +35,31 @@ app.listen(port, function(){
 
 
 
+// app.get('/:type', async (req,res) => {
+//     // req.send("hello, world")
+//     var {type} = req.params;
+
+//     if(type === 'seoul'){
+//         var data = [{
+//             name : "kimo",
+//             city : "seoul"
+//         },
+//         {
+//             name : "jong",
+//             city : "seoul"
+//         }];
+//         res.send(data);
+//         console.log(data)
+//     }else if(type === 'jeju'){
+//        var data = [{
+//            name : "hong",
+//            city : "jeju"
+//        }];
+//        res.send(data)
+//        console.log(data)
+//     }
+// });
+
 
 
 
