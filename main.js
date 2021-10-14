@@ -1,27 +1,27 @@
 // console.log("Server open")
 
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
+// var http = require('http');
+// var fs = require('fs');
+// var url = require('url');
 
-const { dirname } = require('path');
-const { type } = require('os');
-var app = http.createServer(function(request,response){
-    var _url = request.url;
-    console.log(_url);
-    if(_url == '/'){
-      _url = '/index.html';
-    }
-    if(_url == '/favicon.ico'){
-      response.writeHead(404);
-      response.end();
-      return;
-    }
-    response.writeHead(200);
-    response.end(fs.readFileSync(__dirname + _url));
+// const { dirname } = require('path');
+// const { type } = require('os');
+// var app = http.createServer(function(request,response){
+//     var _url = request.url;
+//     console.log(_url);
+//     if(_url == '/'){
+//       _url = '/index.html';
+//     }
+//     if(_url == '/favicon.ico'){
+//       response.writeHead(404);
+//       response.end();
+//       return;
+//     }
+//     response.writeHead(200);
+//     response.end(fs.readFileSync(__dirname + _url));
  
-});
-app.listen(3000);
+// });
+// app.listen(3000);
 
 
 
@@ -89,27 +89,53 @@ app.listen(3000);
 // console.log(1>2);   //false
 // console.log(1<2);   //true
 // console.log(1===1); //true
-// console.log(1===2); //false
+// console.log(1===2); //false  ===  는 타입까지 같아야 한다.
 
 
 
-// 제어문
+// // 제어문 Flow control statements
+// console.log('a');
+// console.log('b');
+// console.log('c1');
+// console.log('c2');
 
 
 
+// // 조건문 Conditional statement  if문 if(true or false){}
+// console.log('a');
+// console.log('b');
+// if(true){
+//   console.log('c1');
+// } else {
+//   console.log('c2');
+// }
+// console.log('d');  // true 면 c1 실행 
 
 
 
+// // 콘솔 입력값 받기
+// var args = process.argv;
+// console.log(args[1])
+// console.log('a');
+// console.log('b');
+// if(args[1]=='1'){
+//   console.log('c1');
+// } else {
+//   console.log('c2');
+// }
+// console.log('d');
 
 
 
+// // 반복문 Loop statement  for, while, do while  while(ture or false){}
+// console.log('a')
+// console.log('b')
 
-
-
-
-
-
-
+// while(true){
+//   console.log('c')
+//   console.log('d')
+// }
+// console.log('e')
 
 
 
