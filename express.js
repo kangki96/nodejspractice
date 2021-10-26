@@ -63,14 +63,53 @@ app.listen(port, function(){
 
 
 
+// const courses = [
+//     { id: 1, name: "courses1" },
+//     { id: 2, name: "courses2" },
+//     { id: 3, name: "courses3" }
+//   ];
+//   app.get("/", (req, res) => {
+//     res.send("Hello World");
+//   });
+  
+//   app.get("/api/courses", (req, res) => {
+//     res.send(courses);
+//   });
+  
+//   // 해당하는 ID를 찾아서 Respon
+//   app.get("/api/courses/:id", (req, res) => {
+//     const course = courses.find(c => c.id === parseInt(req.params.id));
+//     if (!course) res.status(404).send(`ID was not found`);
+//     res.send(course);
+//   });
+
+
+
+// app.use(express.json());
+
+// app.post("/api/courses", (req, res) => {
+//   const course = {
+//     id: courses.length + 1,
+//     name: req.body.name
+//   };
+//   courses.push(course);
+//   res.send(course);
+// });
 
 
 
 
 
 
+var a = 70+79+60+80
 
+console.log(a/4);
 
+var b = 65+83+84+65
 
+console.log(b/4)
 
+var a = ()=>{
+    InputEvent
+}
 

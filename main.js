@@ -4,8 +4,9 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 
-const { dirname } = require('path');
+const { dirname, resolve } = require('path');
 const { type } = require('os');
+const { rejects } = require('assert');
 var app = http.createServer(function(request,response){
     var _url = request.url;
     console.log(_url);
@@ -162,20 +163,148 @@ app.listen(3000);
 
 
 
+// //동기,비동기
+// function workP(sec) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(new Date().toISOString());
+//     }, sec * 1000);
+//   });
+// }
+
+
+// function justFunc() {
+//   return "just Function";
+// }
+
+
+// const asyncFunc= async () => {
+//   return "async Function"
+// }
+
+
+// console.log("justFunc : ",justFunc());
+// console.log("asyncFunc : ",asyncFunc());
+// console.log("workP : ",workP());
+
+
+// console.log("1:",typeof null)
+
+// console.log("2:",typeof undefined)
+
+// console.log("3:",null == undefined)
+
+// console.log("4:",null === undefined)
+
+// console.log("5:",null == null)
+
+// console.log("6",null === null)
+
+// console.log("7:",!null)
+
+
+
+// // 화살표 함수
+// const foo = (b) => {
+//   var a = 10;
+//   return a + b +11;
+// }
+
+// const bar = (x) =>{
+//   var y = 1;
+//   return foo(x*y);
+// }
+
+// console.log(bar(7));
+
+
+// const singletest = ()=>{
+//   var i;
+//   console.log(1)
+//   for(i = 0; i<3; i++){
+//     console.log("자바스크립트는 싱글 스레드 언어");
+//   }
+//   console.log(3);
+// }
+
+// singletest();
+
+
+
+// crypto 모듈, password 암호화
+
+
+
+// var obj = {
+//   a :  1,
+//   b : () =>{
+//   console.log(5)
+//   }  
+// }
+// obj.b()
+
+
+
+// const test = () => {
+//   setTimeout(()=>{
+//     callback();
+//   }, 1000);
+// }
+
+// const callback = () => {
+//   console.log("hello")
+//   return 1;
+// }
+
+// test(callback());
 
 
 
 
+// console.log(2750000)
+
+
+// let 은 재할당이 된다. 재정의가 안된다.
+// const 는 재할당, 재정의 둘다 안됨
+// var 은 다 된다.
+
+
+
+// arr1 = arr1.filter(x => !arr2.includes(x));
+
+// console.log(arr1)
+
+
+// //if else
+// const e = "박준석"
+// if(e=="박준석") console.log("늦음")
+// else console.log("빠름")
+
+
+// // 3항 연산자
+// const d = "강기모"
+// d ==  "강기모"
+// ? console.log("맞음")
+// : console.log("틀림")
+// // 조건문 ? true일때 적고   : 은 false일떄
 
 
 
 
+// // AND(&&), OR(||), NOT(!)
+// const a = "a"
+// const b = "b"
+// const c = "a"
+
+// if(a!=b || a==a) console.log("맞음")
+// else console.log("틀림")
+
+
+// if(a!=b && a==a) console.log("맞음")
+// else console.log("틀림")
 
 
 
+// a = !true
 
-
-
-
-
-
+// console.log(a)
