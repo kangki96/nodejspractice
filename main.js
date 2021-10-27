@@ -411,9 +411,20 @@
 // a==b || a==c
 // a>b
 
-const a = 2
-const b = 1
-if(a>b || a==b){
-    return true;
+// const a = 2
+// const b = 1
+// if(a>b || a==b){
+//     return true;
+// }
+
+
+
+const fun1 = (a,b)=> {
+    return a*b;
 }
 
+const fun2 = (a,b) => {
+    return a+b;
+}
+
+exports.fun1 =  fun1;
