@@ -1,28 +1,28 @@
 // console.log("Server open")
 
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
+// var http = require('http');
+// var fs = require('fs');
+// var url = require('url');
 
-const { dirname, resolve } = require('path');
-const { type } = require('os');
-const { rejects } = require('assert');
-var app = http.createServer(function(request,response){
-    var _url = request.url;
-    console.log(_url);
-    if(_url == '/'){
-      _url = '/index.html';
-    }
-    if(_url == '/favicon.ico'){
-      response.writeHead(404);
-      response.end();
-      return;
-    }
-    response.writeHead(200);
-    response.end(fs.readFileSync(__dirname + _url));
+// const { dirname, resolve } = require('path');
+// const { type } = require('os');
+// const { rejects } = require('assert');
+// var app = http.createServer(function(request,response){
+//     var _url = request.url;
+//     console.log(_url);
+//     if(_url == '/'){
+//       _url = '/index.html';
+//     }
+//     if(_url == '/favicon.ico'){
+//       response.writeHead(404);
+//       response.end();
+//       return;
+//     }
+//     response.writeHead(200);
+//     response.end(fs.readFileSync(__dirname + _url));
  
-});
-app.listen(3000);
+// });
+// app.listen(3000);
 
 
 
@@ -308,3 +308,112 @@ app.listen(3000);
 // a = !true
 
 // console.log(a)
+
+// function addOne(b){
+//   var a = b +1;
+//   return a;
+// }
+
+// console.log(addOne(4))
+
+// const add = (x,y)=>{
+//   const result = x + y;
+//   console.log(result)
+//   return result;
+// }
+
+// add(3,4)
+
+
+
+
+// 콘솔창에서 입력받기
+// const readline= require('readline');
+// const rl = readline.createInterface({
+//   input : process.stdin,
+//   output : process.stdout
+// });
+
+// const input = [];
+
+// rl.on("line", (line)=>{
+//   input = line.split('').map((el)=> parseInt(el));
+// }).on("close", ()=>{
+//   console.log(input[0] + input[1]);
+//   process.exit();
+// });
+
+
+
+
+
+// 콘솔창에서 입력받기2
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// let input = [];
+
+// rl.on('line', function (line) {
+//     input = line.split(' ').map((el) => parseInt(el));
+//   })
+//   .on('close', function () {
+//     console.log(input[a] + input[b]);
+//     process.exit();
+//   });
+
+
+// const a = 100;
+// const b = "Hello, World!";
+
+// console.log("a is %d",a);
+// console.log(`${a} 는 숫자 ${b}는 문자`)
+
+
+
+
+
+
+// javascript 기본 문법
+// var notify = function (message) {
+//     console.log('# NOTIFICAION : ' + message);
+// }
+
+// notify('say something');
+
+
+// var notify = (message)=>{
+//     console.log('# NOTIFICAION : ' + message);
+// }
+
+// notify('say something')
+
+
+// var add = (value1,value2) => value1 + value2
+
+// console.log(add(5,6));
+
+
+
+
+
+
+
+// const a = "str1 + " + "str2"
+
+// console.log(a)
+
+// a==b
+// a!=b
+// a==b && a==c
+// a==b || a==c
+// a>b
+
+const a = 2
+const b = 1
+if(a>b || a==b){
+    return true;
+}
+
