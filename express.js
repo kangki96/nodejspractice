@@ -1,37 +1,37 @@
-var express = require('express');
-var app = express();
-var port = 8080
+// var express = require('express');
+// var app = express();
+// var port = 8080
 
-app.listen(port, function(){
-    console.log(`Listening on ${port}`)
-});
+// app.listen(port, function(){
+//     console.log(`Listening on ${port}`)
+// });
 
 
-// HTML 파일보내기
-// page1 url로 접속하면 "페이지1" 가 뜬다 
-app.get('/page1', function(req, res){
-    res.send("페이지 1");
-});
+// // HTML 파일보내기
+// // page1 url로 접속하면 "페이지1" 가 뜬다 
+// app.get('/page1', function(req, res){
+//     res.send("페이지 1");
+// });
 
-// page2 url로 접속하면 "페이지2" 가 뜬다
-app.get('/page2', function(req, res){
-    res.send("페이지 2");
-});
+// // page2 url로 접속하면 "페이지2" 가 뜬다
+// app.get('/page2', function(req, res){
+//     res.send("페이지 2");
+// });
 
-app.get('/1.html', function(req, res){
-    res.sendFile(__dirname + "/1.html");
-    console.log("HTML 접속")
-});
+// app.get('/1.html', function(req, res){
+//     res.sendFile(__dirname + "/1.html");
+//     console.log("HTML 접속")
+// });
 
-app.get('/2.html', function(req,res){
-    res.sendFile(__dirname + "/2.html");
-    console.log("CSS 접속");
-});
+// app.get('/2.html', function(req,res){
+//     res.sendFile(__dirname + "/2.html");
+//     console.log("CSS 접속");
+// });
 
-app.get('/3.html', function(req,res){
-    res.sendFile(__dirname + "/3.html");
-    console.log("JavaScript 접속");
-});
+// app.get('/3.html', function(req,res){
+//     res.sendFile(__dirname + "/3.html");
+//     console.log("JavaScript 접속");
+// });
 
 
 
@@ -101,15 +101,15 @@ app.get('/3.html', function(req,res){
 
 
 
-var a = 70+79+60+80
+// var a = 70+79+60+80
 
-console.log(a/4);
+// console.log(a/4);
 
-var b = 65+83+84+65
+// var b = 65+83+84+65
 
-console.log(b/4)
+// console.log(b/4)
 
-var a = ()=>{
-    InputEvent
-}
+// var a = ()=>{
+//     InputEvent
+// }
 

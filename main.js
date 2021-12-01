@@ -419,15 +419,18 @@
 
 
 
-const fun1 = (a,b)=> {
-    return a*b;
-}
+// const fun1 = (a,b)=> {
+//     return a*b;
+// }
 
-const fun2 = (a,b) => {
-    return a+b;
-}
+// const fun2 = (a,b) => {
+//     return a+b;
+// }
+
+// fun1(3,2)
 
 
-fun1(3,2)
+
+
 
 
