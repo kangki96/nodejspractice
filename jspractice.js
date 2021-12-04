@@ -550,10 +550,10 @@ app.listen(3000);
 
 // 객체 object
 
-const superman = {
-    name : "kimo",
-    age : "26",
-}
+// const superman = {
+//     name : "kimo",
+//     age : "26",
+// }
 
 // if (superman.name = "kIMO"){
 // console.log("REAL!")
@@ -562,19 +562,126 @@ const superman = {
 // }
 
 
-superman.home = "seoul";
-superman['hobby'] = "soccer";
+// superman.home = "seoul";
+// superman['hobby'] = "soccer";
 // console.log(superman)
 
-if(superman.name === "kimo"){
-    console.log(superman,superman.real="true")
-} else if(superman.name != "kimo"){
-    console.log(superman,"Fake")
-} else {
-    console.log("System shut down")
-}
-
-
+// if(superman.name === "kimo"){
+//     console.log(superman,superman.real="true")
+// } else if(superman.name != "kimo"){
+//     console.log(superman,"Fake")
+// } else {
+//     console.log("System shut down")
+// }
 // delete superman.name;
+
+
+
+
+
+// // 확인
+// const makeObject= (name, age) =>{
+//     return {
+//         name : name,
+//         age : age,
+//         hobby : 'football',
+//     }
+// }
+
+// const Mike = makeObject('Mike', 30)
+// console.log(Mike)
+
+// console.log("Age" in Mike)
+
+
+
+
+
+// // 성인인지 아닌지 확인
+// const isAdult=(user) => {
+//     if(!("age" in user) || user.age < 20){
+//     return false
+// } 
+//     return true
+// };
+
+// const Mike = {
+//     name : "Mike",
+//     age : "30",
+// };
+
+// const jane = {
+//     name : "jane"
+// };
+
+// console.log(isAdult(jane))
+
+
+
+// const Mike = {
+//     name : "Mike",
+//     age : 30,
+// };
+
+// for(x in Mike){
+//  console.log(Mike[x])
+// }
+
+
+
+
+
+
+// let boy = {
+//     name : "Mike",
+//     showName: function () {
+//         console.log(this.name)
+//     }
+// };
+
+// boy.showName();
+// let man = boy;
+// man.name = "tom";
+
+// boy = null;
+
+// man.showName();
+
+
+
+
+
+// let boy = {
+//     name: "Mike",
+//     sayThis: () => { 
+//         console.log(this);
+//     }
+// };
+
+// boy.sayThis()
+
+
+
+
+
+// // array;
+// let days = ["a","b","c"];
+
+// for(let i = 0; i<days.length; i++){
+//     console.log(days[i])
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
